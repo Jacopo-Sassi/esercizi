@@ -5,6 +5,18 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+img{
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+nowrap {
+  white-space: nowrap;
+}
+
+
 body {
   font-family: 'Ubuntu', sans-serif;
   font-size: 1.5rem;
@@ -13,4 +25,41 @@ body {
   background-image: radial-gradient(whitesmoke, #475569);
   display: flex;
   flex-direction: column;
+}
+
+header, footer {
+  position: sticky;
+  background-color: #1e293b;
+  color: whitesmoke;
+  text-align: center;
+}
+
+header{
+  top: 0;
+}
+
+nav {
+  background-color: #fff;
+  padding: 0.5rem;
+  border-bottom: 2px solid black;
+  font-weight: bolder;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+nav a, nav a:visited {
+  color: black;
+}
+
+nav a:hover, nav a:focus {
+  color: hsla(0, 0%, 20%, 0.6);
+}
+
+
+main{
+  flex-grow: 1;
+}
+
+footer {
+  bottom: 0;
 }
